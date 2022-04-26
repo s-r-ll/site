@@ -1,0 +1,121 @@
+/*Обнуление*/
+*{						/* Убираем отступы и границ у всех элементов */
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{					/*  Указываем, что в размеры псевдоэлемента включаются ширина границ*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}			/*   Убираем границы у песевдоклассов   */
+a:focus,a:active{outline: none;}			
+
+nav,footer,header,aside{display: block;}		/*  	Указываем, что новые тэги - блочные элементы    */
+
+html,body{ 					/*   приводим все браузерные стили к единому   */
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 20px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}			/*    Устанавливаем родительский шрифт   */
+
+input::-ms-clear{display: none;}			/*   Убираем крестик у поля ввода в IE   */
+button{cursor: pointer;}						/*   Курсор при наведении на кнопку становится указателем   */
+button::-moz-focus-inner {padding:0;border:0;}				/*   Убираем отступы у кнопке в Firefox   */
+a, a:visited{text-decoration: none;}					/*   Убирааем нижнее подчеркивание у ссылок   */
+a:hover{text-decoration: none;}			
+ul li{list-style: none;}				/*   Убираем нумерацию у списков   */
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;text-align: center;}			/*   Убираем браузерные стили заголовков   */
+/*--------------------*/
+
+.container{
+	width: 1200px;
+	margin: 0 auto ;
+}
+
+						/*      CSS-свойстива для шапки      */
+						
+.header__img{				/*     Стили  изображений      */
+	width: 100px;
+	margin-left: 4%;
+	margin-right: 4%;
+	
+}
+
+.header__h1{				/*         Стили для заголовка      */
+	font-size: 32px ;
+	font-weight: 700 ;
+	
+}
+
+.header__row{				 		/*      Стили для блока содержимого шабки       */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.header{						/*   Стили для шапки    */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	width: 100%
+}
+
+						/*     Свойства для навигационного меню       */
+						
+						
+.nav__item-menu {					/*     Стили для элементов навигационного меню     */
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 5px;
+}
+
+.nav__item-menu a{		/*    Стиль для якорей навигационного меню     */
+	color: black;
+}
+
+.nav__reference{					/*     Стили для блоков якорей нав. меню    */
+	width: 100%;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+.nav{								/*     Стиль для навигационного меню     */
+	width:200px;
+	float: left;
+}
+
+				/*   Свойства для блока с текстом   */
+				
+
+.text{						/*      Стили для блока с текстом   */
+	float: right;
+	width: 1000px;
+	line-height: 35px
+}
+
+.text__img{					/*    Стили для изображения      */
+	width: 200px;
+	float: left;
+	margin: 50px;
+}
+
+h2{							/*     Стили для заголовков текста     */
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
